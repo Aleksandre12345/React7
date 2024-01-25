@@ -18,18 +18,15 @@ const time = (): string => {
 
 const date = (): string => {
   const curr1: Date = new Date();
-  const options: DateTimeFormatOptions = {
-    day: 'numeric',
-    weekday: 'long',
-  };
-  return curr1.toLocaleDateString('en-US', options);
+  const datetime: Intl.DateTimeFormatOptions = { day: 'numeric', weekday: 'short' as const }; 
+  return curr1.toLocaleDateString('en-US', datetime);
 };
 
 const Card = () => {
   const [notes, donote] = useState<Task[]>([]);
   const [inputValue, newvalue] = useState<string>('');
   const [notes1, setNotes] = useState<Task[]>([]);
-
+  
   console.log(notes1)
 
   const change1 = (event: React.ChangeEvent<HTMLInputElement>) => {
