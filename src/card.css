@@ -4,20 +4,20 @@
   display: grid;
   grid-template-columns: 275px 430px;
   column-gap: 296px;
-  margin-top: -20px;
+  margin-top: -110px;
 }
 
 h1 {
   color: #007FDB;
   font-size: 96px;
   font-weight: 700;
-  margin-top: 100%;
-  font-family: Inter;
+  margin-top: 200px;
+  font-family: 'Inter';
 }
 
 .box1 {
   width: 430px;
-  height: 620px;
+  height: 580px;
   background-image: url(./assets/img.svg);
   background-repeat: no-repeat;
   display: flex;
@@ -25,8 +25,8 @@ h1 {
   position: relative;
   background-color: #FFF;
   border-radius: 10px 10px 0px 0px;
-
 }
+
 h2 {
   color: #fff;
   font-family: "Russo One";
